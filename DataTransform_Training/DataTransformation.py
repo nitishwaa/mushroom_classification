@@ -9,7 +9,7 @@ class dataTransform:
      """
                This class shall be used for transforming the Good Raw Training Data before loading it in Database!!.
 
-               Written By: iNeuron Intelligence
+               Written By: nk
                Version: 1.0
                Revisions: None
 
@@ -27,7 +27,7 @@ class dataTransform:
                                                        each value for that column is enclosed in quotes. This is done
                                                        to avoid the error while inserting string values in table as varchar.
 
-                                            Written By: iNeuron Intelligence
+                                            Written By: nk
                                            Version: 1.0
                                            Revisions: None
 
@@ -58,30 +58,3 @@ class dataTransform:
                #log_file.write("Current Date :: %s" %date +"\t" +"Current time:: %s" % current_time + "\t \t" + "Data Transformation failed because:: %s" % e + "\n")
                log_file.close()
           log_file.close()
-
-    # def removeHyphenFromColumnNames(self,data):
-     #      """
-     #                                                Method Name: addQuotesToStringValuesInColumn
-     #                                                Description: This method changing the column names by replacing the '-'.
-     #
-     #                                                 Written By: iNeuron Intelligence
-     #                                                Version: 1.0
-     #                                                Revisions: None
-     #
-     #                                                        """
-     #      log_file = open("Training_Logs/removeHyphenFromColumnNames.txt", 'a+')
-     #      try:
-     #
-     #           # there are "hyphen" in our column name which results in failure when inserting the column names in the table
-     #           # so we are changing the column names by replacing the '-'
-     #           for col in data.columns:
-     #                new_col = col.replace('-', '')
-     #                data.rename(columns={col: new_col},inplace=True)
-     #           return data
-     #
-     #      except Exception as e:
-     #           self.logger.log(log_file, "Data Transformation failed because:: %s" % e)
-     #           #log_file.write("Current Date :: %s" %date +"\t" +"Current time:: %s" % current_time + "\t \t" + "Data Transformation failed because:: %s" % e + "\n")
-     #           log_file.close()
-     #      log_file.close()
-     #      return data

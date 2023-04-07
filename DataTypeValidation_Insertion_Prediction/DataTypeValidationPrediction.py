@@ -158,7 +158,7 @@ class dBOperation:
                                        Output: None
                                        On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
+                                        Written By: nk
                                        Version: 1.0
                                        Revisions: None
 

@@ -11,3 +11,33 @@
 2020-02-14/18:39:21		Column Length Validation Started!!
 2020-02-14/18:39:21		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
 2020-02-14/18:39:21		Column Length Validation Completed!!
+2023-04-04/01:12:25		Column Length Validation Started!!
+2023-04-04/01:12:25		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-04/01:12:25		Column Length Validation Completed!!
+2023-04-04/01:22:01		Column Length Validation Started!!
+2023-04-04/01:22:01		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-04/01:22:01		Column Length Validation Completed!!
+2023-04-04/01:24:30		Column Length Validation Started!!
+2023-04-04/01:24:30		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-04/01:24:30		Column Length Validation Completed!!
+2023-04-05/01:28:04		Column Length Validation Started!!
+2023-04-05/01:28:04		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-05/01:28:04		Column Length Validation Completed!!
+2023-04-05/01:55:57		Column Length Validation Started!!
+2023-04-05/01:55:57		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-05/01:55:57		Column Length Validation Completed!!
+2023-04-05/01:57:53		Column Length Validation Started!!
+2023-04-05/01:57:53		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-05/01:57:53		Column Length Validation Completed!!
+2023-04-06/23:17:46		Column Length Validation Started!!
+2023-04-06/23:17:46		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-06/23:17:46		Column Length Validation Completed!!
+2023-04-06/23:20:16		Column Length Validation Started!!
+2023-04-06/23:20:16		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-06/23:20:16		Column Length Validation Completed!!
+2023-04-06/23:30:14		Column Length Validation Started!!
+2023-04-06/23:30:14		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-06/23:30:14		Column Length Validation Completed!!
+2023-04-06/23:31:05		Column Length Validation Started!!
+2023-04-06/23:31:05		Invalid Column Length for the file!! File moved to Bad Raw Folder :: mushroom_08012018_120088.csv
+2023-04-06/23:31:05		Column Length Validation Completed!!

@@ -1,5 +1,6 @@
 import shutil
-import sqlite3
+#import sqlite3
+import cassandra
 from datetime import datetime
 from os import listdir
 import os
@@ -11,7 +12,7 @@ class dBOperation:
     """
       This class shall be used for handling all the SQL operations.
 
-      Written By: iNeuron Intelligence
+      Written By: nk
       Version: 1.0
       Revisions: None
 
@@ -31,13 +32,27 @@ class dBOperation:
                 Output: Connection to the DB
                 On Failure: Raise ConnectionError
 
-                 Written By: iNeuron Intelligence
+                 Written By: nk
                 Version: 1.0
                 Revisions: None
 
                 """
         try:
-            conn = sqlite3.connect(self.path+DatabaseName+'.db')
+            #conn = sqlite3.connect(self.path+DatabaseName+'.db')
+
+            cloud_config = {
+                'secure_connect_bundle': 'D:\Data Science\Projects\mushroomClassification\code\Mushroom Classifier\secure-connect-test.zip'
+            }
+            auth_provider = PlainTextAuthProvider('NQcbFgyywnmQxWKjhouSIAdK',
+                                                  '5y-0EA5KEkNY6GLJMEJf0g.6xN,X9ABghq2JU9bDAw.0kUqFMylD6+vos_,IuhAc_yz7PeZOxlnrEcrCWRlj8D2wZi0UnC-195tWer8kHPg7jlFGYc_1ZIAX6aqJ0NZ1')
+            cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
+            session = cluster.connect(self.path+DatabaseName+'.db')
+
+            row = session.execute("select release_version from system.local").one()
+            '''if row:
+                print("sucess" + row[0])
+            else:
+                print("An error occurred.")'''
 
             file = open("Training_Logs/DataBaseConnectionLog.txt", 'a+')
             self.logger.log(file, "Opened %s database successfully" % DatabaseName)
@@ -56,7 +71,7 @@ class dBOperation:
                         Output: None
                         On Failure: Raise Exception
 
-                         Written By: iNeuron Intelligence
+                         Written By: nk
                         Version: 1.0
                         Revisions: None
 
@@ -127,7 +142,7 @@ class dBOperation:
                                Output: None
                                On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
+                                Written By: nk
                                Version: 1.0
                                Revisions: None
 
@@ -175,7 +190,7 @@ class dBOperation:
                                Output: None
                                On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
+                                Written By: nk
                                Version: 1.0
                                Revisions: None
 
